@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jogo da Forca</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- logo -->
+        <header>
+            <a href="/index.html">
+                <img src="./imagens/logo.png" alt="logo alura" class="logo">
+            </a>
+        </header>
+
+        <!--telaInicial-->
+            <div class="tela-inicial" id="tela-inicio">
+                <button id="inicia-jogo" class="inicia-jogo-btn">Começar a jogar</button>
+                <button id="adiciona-palavra" class="add-palavra-btn">Adicionar nova palavra</button>
+            </div>
+
+        <!--adicionarNovaPalavra-->
+        <section class="input-section hide" id="secao-input">
+            <input type="text" id="add-palavra" class="input-add-palavra" placeholder="Digite uma palavra">
+         
+            
+
+            <div class="aviso">
+                <img class="aviso-img" src="./imagens/atencao.png" alt="ponto de exclamação dentro de um círculo">
+                <p class="aviso-p">Digite uma fruta (sem acento e máx. 8 letras)</p>
+            </div>
+
+            <div class="botoes">
+                <button id="salvar-palavra" class="botoes-esquerda">Salvar palavra</button>
+                <button id="salva-e-inicia" class="btn-salva-inicia">Iniciar Jogo</button>
+                <button id="cancela-btn" class="botoes-direita">Cancelar</button>
+                
+            </div>
+        </section> 
+
+        <!--jogo-->
+             
+    <main  class="main-jogo hide" id="main-id">
+        <!--canvas -->
+        <canvas width="1200" height="480" id="forca">
+
+        </canvas>      
+
+        <div class="dica"><h2>Você tem 6 chances e  nosso TEMA é: Frutas</h2></div>
+        <div class="botoes-main">
+            <button id="novo-jogo-btn" class="botoes-esquerda">Novo Jogo</button>
+            <button id="desistir-btn" class="botoes-direita">Desistir</button>
+        </div>
+    </main>
+
+        <footer id="footer">
+            <h3 class="footer">Cristiano Barbosa | Front End Developer | Alura Challenge</h3>
+        </footer>
+
+        <!-- chamandoScriptJs -->
+        <script src="./js/script.js"></script>
+        <script src="./js/botoes.js"></script>
+        <script src="./js/canvas.js"></script>
+        <script src="./js/derrotaVitoria.js"></script>
+    </body>
+
+</html>

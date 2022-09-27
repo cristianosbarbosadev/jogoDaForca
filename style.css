@@ -1,0 +1,235 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.logo {
+    margin: 20px 0 10px 30px;
+    position: absolute;
+    top: 10px;
+}
+
+/* BOTÕES */
+
+.tela-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.inicia-jogo-btn {
+    background-color: #1c3e8a;
+    border: 1px solid #1c3e8a;
+    border-radius: 28px;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 300px;
+    height: 90px;
+    margin: 240px 0 25px 0;
+    
+}
+
+.inicia-jogo-btn:hover, .botoes-direita:hover {
+    background-color: #FFFFFF;
+    color: #1c3e8a;
+    border: 1px solid #1c3e8a;
+    transition: 600ms; 
+    transform: scale(1.1); 
+    cursor: pointer;
+     
+}
+
+.add-palavra-btn {
+    background-color: #FFFFFF;
+    color: #1c3e8a;
+    border: 1px solid #1c3e8a;
+    border-radius: 28px;
+    font-size: 20px;
+    width: 300px;
+    height: 90px;
+}
+
+.add-palavra-btn:hover, .botoes-esquerda:hover {
+    background-color: #1c3e8a;
+    border: 1px solid #1c3e8a;
+    color: #FFFFFF;
+    transition: 600ms; 
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+.btn-salva-inicia {
+    background-image: linear-gradient(to left bottom, #1c3e8a, #FFFFFF);
+    border: 1px solid #1c3e8a;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.btn-salva-inicia:hover {
+    transition: 600ms;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.botoes-esquerda {
+    background-color: #1c3e8a;
+    border: 1px solid #1c3e8a;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    margin-right: 20px;
+    
+}
+
+.botoes-direita {
+    background-color: #FFFFFF;
+    color: #1c3e8a;
+    border: 1px solid #1c3e8a;
+    border-radius: 25px;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+}
+
+
+
+/*INPUT*/
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px auto ;
+}
+
+.input-add-categoria {
+    background-color: #E5E5E5;
+    border: none;
+    font-size: 27px;
+    color: #1c3e8a;
+    width: 500px;
+    height: 150px;
+    margin: 0 120px 50px 0;
+    outline: 0;
+}
+
+.input-add-categoria::placeholder {
+    font-size: 35px;
+    color: #1c3e8a;
+    
+}
+
+
+.input-add-palavra {
+    background-color: #E5E5E5;
+    border: none;
+    font-size: 27px;
+    color: #1c3e8a;
+    width: 500px;
+    height: 150px;
+    margin: 0 120px 50px 0;
+}
+
+.input-add-palavra:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+.input-add-palavra::placeholder {
+    font-size: 35px;
+    color: #1c3e8a;
+}
+
+.aviso {
+    display: flex;
+    padding: 10px;
+    margin: 1rem 31rem 1rem 0;
+  
+}
+
+.aviso-p {
+  color: #222325;
+  margin-left: 7px;
+}
+
+/*JOGO*/
+
+.main-jogo {
+    margin: 0 auto;
+}
+
+/* CANVAS */
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+
+.botoes-main {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/*CSS PARA TRANSIÇÃO DE DIVS*/
+
+.hide {
+    display: none;
+}
+
+/*FOOTER*/
+
+footer {
+    color: #1c3e8a;
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > h3 {
+    font-size: 21px;
+}
+
+footer> a, i {
+    color: #FFFFFF;
+    display: flex;
+    font-size: 25px;
+}
+
+footer> a, i:hover {
+    transform: scale(1.3);
+    transition: 700ms;
+}
+
+.dica {
+    text-align: center;
+    color: #1c3e8a;
+    font-size: 27px;
+    
+}
+
+
